@@ -1,0 +1,289 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE6238491730C53C00BD505B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6238481730C53C00BD505B /* UIKit.framework */; };
+		CE62384B1730C53C00BD505B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE62384A1730C53C00BD505B /* Foundation.framework */; };
+		CE62384D1730C53C00BD505B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE62384C1730C53C00BD505B /* CoreGraphics.framework */; };
+		CE6238531730C53C00BD505B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE6238511730C53C00BD505B /* InfoPlist.strings */; };
+		CE6238551730C53C00BD505B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6238541730C53C00BD505B /* main.m */; };
+		CE6238591730C53C00BD505B /* EPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6238581730C53C00BD505B /* EPAppDelegate.m */; };
+		CE62385C1730C53C00BD505B /* EPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE62385B1730C53C00BD505B /* EPViewController.m */; };
+		CE62385F1730C53C00BD505B /* EPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE62385D1730C53C00BD505B /* EPViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CE6238441730C53C00BD505B /* EPaper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EPaper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE6238481730C53C00BD505B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CE62384A1730C53C00BD505B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CE62384C1730C53C00BD505B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CE6238501730C53C00BD505B /* EPaper-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EPaper-Info.plist"; sourceTree = "<group>"; };
+		CE6238521730C53C00BD505B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CE6238541730C53C00BD505B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE6238561730C53C00BD505B /* EPaper-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EPaper-Prefix.pch"; sourceTree = "<group>"; };
+		CE6238571730C53C00BD505B /* EPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EPAppDelegate.h; sourceTree = "<group>"; };
+		CE6238581730C53C00BD505B /* EPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EPAppDelegate.m; sourceTree = "<group>"; };
+		CE62385A1730C53C00BD505B /* EPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EPViewController.h; sourceTree = "<group>"; };
+		CE62385B1730C53C00BD505B /* EPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EPViewController.m; sourceTree = "<group>"; };
+		CE62385E1730C53C00BD505B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/EPViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE6238411730C53C00BD505B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE6238491730C53C00BD505B /* UIKit.framework in Frameworks */,
+				CE62384B1730C53C00BD505B /* Foundation.framework in Frameworks */,
+				CE62384D1730C53C00BD505B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE6238391730C53C00BD505B = {
+			isa = PBXGroup;
+			children = (
+				CE62384E1730C53C00BD505B /* EPaper */,
+				CE6238471730C53C00BD505B /* Frameworks */,
+				CE6238451730C53C00BD505B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE6238451730C53C00BD505B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE6238441730C53C00BD505B /* EPaper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE6238471730C53C00BD505B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE6238481730C53C00BD505B /* UIKit.framework */,
+				CE62384A1730C53C00BD505B /* Foundation.framework */,
+				CE62384C1730C53C00BD505B /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE62384E1730C53C00BD505B /* EPaper */ = {
+			isa = PBXGroup;
+			children = (
+				CE6238571730C53C00BD505B /* EPAppDelegate.h */,
+				CE6238581730C53C00BD505B /* EPAppDelegate.m */,
+				CE62385A1730C53C00BD505B /* EPViewController.h */,
+				CE62385B1730C53C00BD505B /* EPViewController.m */,
+				CE62385D1730C53C00BD505B /* EPViewController.xib */,
+				CE62384F1730C53C00BD505B /* Supporting Files */,
+			);
+			path = EPaper;
+			sourceTree = "<group>";
+		};
+		CE62384F1730C53C00BD505B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE6238501730C53C00BD505B /* EPaper-Info.plist */,
+				CE6238511730C53C00BD505B /* InfoPlist.strings */,
+				CE6238541730C53C00BD505B /* main.m */,
+				CE6238561730C53C00BD505B /* EPaper-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE6238431730C53C00BD505B /* EPaper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE6238621730C53C00BD505B /* Build configuration list for PBXNativeTarget "EPaper" */;
+			buildPhases = (
+				CE6238401730C53C00BD505B /* Sources */,
+				CE6238411730C53C00BD505B /* Frameworks */,
+				CE6238421730C53C00BD505B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EPaper;
+			productName = EPaper;
+			productReference = CE6238441730C53C00BD505B /* EPaper.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE62383B1730C53C00BD505B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = EP;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = user;
+			};
+			buildConfigurationList = CE62383E1730C53C00BD505B /* Build configuration list for PBXProject "EPaper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CE6238391730C53C00BD505B;
+			productRefGroup = CE6238451730C53C00BD505B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE6238431730C53C00BD505B /* EPaper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE6238421730C53C00BD505B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE6238531730C53C00BD505B /* InfoPlist.strings in Resources */,
+				CE62385F1730C53C00BD505B /* EPViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE6238401730C53C00BD505B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE6238551730C53C00BD505B /* main.m in Sources */,
+				CE6238591730C53C00BD505B /* EPAppDelegate.m in Sources */,
+				CE62385C1730C53C00BD505B /* EPViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CE6238511730C53C00BD505B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE6238521730C53C00BD505B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CE62385D1730C53C00BD505B /* EPViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE62385E1730C53C00BD505B /* en */,
+			);
+			name = EPViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE6238601730C53C00BD505B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		CE6238611730C53C00BD505B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE6238631730C53C00BD505B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EPaper/EPaper-Prefix.pch";
+				INFOPLIST_FILE = "EPaper/EPaper-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CE6238641730C53C00BD505B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EPaper/EPaper-Prefix.pch";
+				INFOPLIST_FILE = "EPaper/EPaper-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE62383E1730C53C00BD505B /* Build configuration list for PBXProject "EPaper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE6238601730C53C00BD505B /* Debug */,
+				CE6238611730C53C00BD505B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE6238621730C53C00BD505B /* Build configuration list for PBXNativeTarget "EPaper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE6238631730C53C00BD505B /* Debug */,
+				CE6238641730C53C00BD505B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE62383B1730C53C00BD505B /* Project object */;
+}
