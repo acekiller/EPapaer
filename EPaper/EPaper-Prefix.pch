@@ -13,4 +13,68 @@
     #import <Foundation/Foundation.h>
 
 #define tracepoint() NSLog(@"---djm trace %s %d---\n", __FUNCTION__, __LINE__)
+
+typedef unsigned int     DWORD;
+typedef unsigned short   WORD;
+typedef unsigned int     LONG;
+typedef unsigned char    BYTE;
+
+#pragma pack(1)
+typedef struct tagBITMAPFILEHEADER
+{
+    WORD    bfType;
+    DWORD   bfSize;
+    WORD    bfReserved1;
+    WORD    bfReserved2;
+    DWORD   bfOffBits;
+} BITMAPFILEHEADER;
+
+typedef struct tagBITMAPINFOHEADER
+{
+    DWORD   biSize;
+    LONG    biWidth;
+    LONG    biHeight;
+    WORD    biPlanes;
+    WORD    biBitCount;
+    DWORD   biCompression;
+    DWORD   biSizeImage;
+    LONG    biXPelsPerMeter;
+    LONG    biYPelsPerMeter;
+    DWORD   biClrUsed;
+    DWORD   biClrImportant;
+} BITMAPINFOHEADER;
+
+
+typedef struct tagBITMAPHEADER
+{
+    BITMAPFILEHEADER fh;
+    BITMAPINFOHEADER info;
+}BITMAPHEADER, *PBITMAPHEADER;
+
+#define RGB565_MASK_RED     0xF800
+#define RGB565_MASK_GREEN   0x07E0
+#define RGB565_MASK_BLUE    0x001F
+
+typedef struct tagRGB565
+{
+    WORD data;
+}RGB565, *PRGB565;
+
+typedef struct tagRGB24
+{
+    BYTE b;
+    BYTE g;
+    BYTE r;
+}RGB24, *PRGB24;
+
+typedef struct tagRGB32
+{
+    BYTE a;
+    BYTE r;
+    BYTE g;
+    BYTE b;
+}RGB32, *PRGB32;
+#pragma pack(4)
+
+
 #endif

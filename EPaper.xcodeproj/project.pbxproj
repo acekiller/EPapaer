@@ -17,6 +17,8 @@
 		CE62385F1730C53C00BD505B /* EPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE62385D1730C53C00BD505B /* EPViewController.xib */; };
 		CEC2AA021734C78C004E4163 /* EPFlatButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC2AA011734C78C004E4163 /* EPFlatButton.m */; };
 		CEC2AA371735204C004E4163 /* EPCaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC2AA361735204C004E4163 /* EPCaptureViewController.m */; };
+		CEC2AA5417354463004E4163 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC2AA5317354463004E4163 /* AssetsLibrary.framework */; };
+		CEC2AA5A17355196004E4163 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC2AA5917355196004E4163 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		CEC2AA011734C78C004E4163 /* EPFlatButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPFlatButton.m; sourceTree = "<group>"; };
 		CEC2AA351735204C004E4163 /* EPCaptureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPCaptureViewController.h; sourceTree = "<group>"; };
 		CEC2AA361735204C004E4163 /* EPCaptureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPCaptureViewController.m; sourceTree = "<group>"; };
+		CEC2AA5317354463004E4163 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		CEC2AA5917355196004E4163 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +48,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEC2AA5A17355196004E4163 /* QuartzCore.framework in Frameworks */,
+				CEC2AA5417354463004E4163 /* AssetsLibrary.framework in Frameworks */,
 				CE6238491730C53C00BD505B /* UIKit.framework in Frameworks */,
 				CE62384B1730C53C00BD505B /* Foundation.framework in Frameworks */,
 				CE62384D1730C53C00BD505B /* CoreGraphics.framework in Frameworks */,
@@ -73,6 +79,8 @@
 		CE6238471730C53C00BD505B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CEC2AA5917355196004E4163 /* QuartzCore.framework */,
+				CEC2AA5317354463004E4163 /* AssetsLibrary.framework */,
 				CE6238481730C53C00BD505B /* UIKit.framework */,
 				CE62384A1730C53C00BD505B /* Foundation.framework */,
 				CE62384C1730C53C00BD505B /* CoreGraphics.framework */,
@@ -118,6 +126,7 @@
 				CE6238401730C53C00BD505B /* Sources */,
 				CE6238411730C53C00BD505B /* Frameworks */,
 				CE6238421730C53C00BD505B /* Resources */,
+				CEC2AA3C17353705004E4163 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -166,6 +175,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CEC2AA3C17353705004E4163 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export CODESIGN_ALLOCATE=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate\nif [ \"${PLATFORM_NAME}\" == \"iphoneos\" ] || [ \"${PLATFORM_NAME}\" == \"ipados\" ]; then\n/Applications/Xcode.app/Contents/Developer/iphoneentitlements/gen_entitlements.py \"my.company.${PROJECT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\";\ncodesign -f -s \"iPhone Developer\" --entitlements \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CE6238401730C53C00BD505B /* Sources */ = {
