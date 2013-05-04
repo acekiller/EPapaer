@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface EPViewController : UIViewController
+@interface EPViewController : UIViewController<UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 
+@property (nonatomic, retain) UIImagePickerController *imagePickerController;
+@property (nonatomic, retain) UIPopoverController *popoverController;
 @end

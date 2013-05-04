@@ -7,7 +7,6 @@
 //
 
 #import "EPAppDelegate.h"
-
 #import "EPViewController.h"
 
 @implementation EPAppDelegate
@@ -19,6 +18,7 @@
     self.viewController = [[EPViewController alloc] initWithNibName:@"EPViewController" bundle:nil];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

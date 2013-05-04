@@ -13,7 +13,5 @@
 @interface EPAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
 @property (strong, nonatomic) EPViewController *viewController;
-
 @end

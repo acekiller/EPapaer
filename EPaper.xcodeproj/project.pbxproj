@@ -15,6 +15,8 @@
 		CE6238591730C53C00BD505B /* EPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6238581730C53C00BD505B /* EPAppDelegate.m */; };
 		CE62385C1730C53C00BD505B /* EPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE62385B1730C53C00BD505B /* EPViewController.m */; };
 		CE62385F1730C53C00BD505B /* EPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE62385D1730C53C00BD505B /* EPViewController.xib */; };
+		CEC2AA021734C78C004E4163 /* EPFlatButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC2AA011734C78C004E4163 /* EPFlatButton.m */; };
+		CEC2AA371735204C004E4163 /* EPCaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC2AA361735204C004E4163 /* EPCaptureViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,10 @@
 		CE62385A1730C53C00BD505B /* EPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EPViewController.h; sourceTree = "<group>"; };
 		CE62385B1730C53C00BD505B /* EPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EPViewController.m; sourceTree = "<group>"; };
 		CE62385E1730C53C00BD505B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/EPViewController.xib; sourceTree = "<group>"; };
+		CEC2AA001734C78C004E4163 /* EPFlatButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPFlatButton.h; sourceTree = "<group>"; };
+		CEC2AA011734C78C004E4163 /* EPFlatButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPFlatButton.m; sourceTree = "<group>"; };
+		CEC2AA351735204C004E4163 /* EPCaptureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPCaptureViewController.h; sourceTree = "<group>"; };
+		CEC2AA361735204C004E4163 /* EPCaptureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPCaptureViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,10 @@
 		CE62384E1730C53C00BD505B /* EPaper */ = {
 			isa = PBXGroup;
 			children = (
+				CEC2AA351735204C004E4163 /* EPCaptureViewController.h */,
+				CEC2AA361735204C004E4163 /* EPCaptureViewController.m */,
+				CEC2AA001734C78C004E4163 /* EPFlatButton.h */,
+				CEC2AA011734C78C004E4163 /* EPFlatButton.m */,
 				CE6238571730C53C00BD505B /* EPAppDelegate.h */,
 				CE6238581730C53C00BD505B /* EPAppDelegate.m */,
 				CE62385A1730C53C00BD505B /* EPViewController.h */,
@@ -165,6 +175,8 @@
 				CE6238551730C53C00BD505B /* main.m in Sources */,
 				CE6238591730C53C00BD505B /* EPAppDelegate.m in Sources */,
 				CE62385C1730C53C00BD505B /* EPViewController.m in Sources */,
+				CEC2AA021734C78C004E4163 /* EPFlatButton.m in Sources */,
+				CEC2AA371735204C004E4163 /* EPCaptureViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,7 +259,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EPaper/EPaper-Prefix.pch";
 				INFOPLIST_FILE = "EPaper/EPaper-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -258,7 +272,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EPaper/EPaper-Prefix.pch";
 				INFOPLIST_FILE = "EPaper/EPaper-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -282,6 +298,7 @@
 				CE6238641730C53C00BD505B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
