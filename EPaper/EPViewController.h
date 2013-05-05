@@ -12,4 +12,5 @@
 
 @property (nonatomic, retain) UIImagePickerController *imagePickerController;
 @property (nonatomic, retain) UIPopoverController *popoverController;
+@property (nonatomic, retain) NSMutableArray *array;
 @end

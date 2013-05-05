@@ -25,7 +25,6 @@
 
 - (void)viewDidLoad
 {
-    tracepoint();
     [super viewDidLoad];
     EPFlatButton* btnCapture = [EPFlatButton buttonWithType:UIButtonTypeCustom];
     btnCapture.frame = CGRectMake(100, 90, 100, 30);
@@ -63,13 +62,11 @@
 
 - (IBAction)photoLibraryAction:(id)sender
 {
-    tracepoint();
 	//[self showImagePicker:UIImagePickerControllerSourceTypePhotoLibrary];
 }
 
 - (IBAction)cameraAction:(id)sender
 {
-    tracepoint();
     //[self showImagePicker:UIImagePickerControllerSourceTypeCamera];
 }
 
